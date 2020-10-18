@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 118, 118);
+}
+
+.wrapper {
+    min-height: 90vh;
+    max-width: 500px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px black;
+    background-image: linear-gradient(90deg, rgb(99, 209, 172) 100px, rgb(252, 255, 100));
+    margin: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    line-height: 55px;
+    flex-basis: 50%;
+    font-size: 60px;
+    color: rgb(61, 71, 55);
+    padding: 30px;
+    cursor: default;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 350px;
+    height: 45px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+form button {
+    width: 45px;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+form button:hover i {
+    color: rgb(255, 57, 57);
+    animation: shake 0.3s linear;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    33% {
+        transform: rotate(15deg)
+    }
+
+    66% {
+        transform: rotate(-15deg)
+    }
+
+    0% {
+        transform: rotate(0deg)
+    }
+}
+
+form button i {
+    font-size: 35px;
+    line-height: 45px;
+    color: rgb(61, 71, 55);
+    transition: 0.3s;
+}
+
+ul {
+    margin-bottom: 25px;
+    list-style: none;
+    min-width: 350px;
+    padding: 5px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul div {
+    margin: 8px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(61, 71, 55);
+    transition: 1s;
+    ;
+}
+
+.deletion {
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+
+li {
+    padding: 3px 15px;
+    flex-grow: 1;
+    font-size: 25px;
+    cursor: default;
+}
+
+button.delete {
+    height: 100%;
+    background-color: rgb(255, 165, 92);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.done {
+    height: 100%;
+    background-color: rgb(102, 202, 156);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.delete i,
+button.done i {
+    height: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0 10px;
+    color: white;
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: .3;
+}
+
+button.delete:hover {
+    background-color: rgb(255, 153, 0);
+}
+
+button.done:hover {
+    background-color: rgb(20, 192, 112);
+}
